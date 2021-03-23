@@ -1,0 +1,180 @@
+/******************* general********************/
+
+*{
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+}
+
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1.6rem;
+}
+
+li{
+font-size: 20px;
+}
+
+a{
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+header{
+	background: #0ACE99;
+	text-align: center;
+}
+
+.container{
+	max-width: 900px;
+	margin: 0 auto;
+	padding:0 15px;
+}
+
+.clerfix: :after{
+content: "";
+clear: both;
+display: table;
+}
+
+/*******************header********************/
+
+header .logo-container{
+	padding: 20px;
+}
+
+header img{
+	width: 150px
+}
+
+/******************* Nvigation********************/
+
+nav {
+	background: #0d9b75;
+	padding: 10px;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+nav li{
+	display: inline-block;
+}
+
+nav li a{
+	color:#fff;
+	display: inline-block;
+	padding: 5px 10px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+/*******************galery********************/
+
+#gallery {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#gallery img{
+	width: 100%;
+}
+
+#gallery .item{
+	float: left;
+	width: 50%;
+	padding: 15px;
+}
+
+
+
+#gallery .caption{
+	background: #f0f0f0;
+	padding: 10px;
+}
+
+#gallery .caprion p {
+margin:0;
+}
+
+#gallery .picture{
+	line-height: 0;
+}
+
+/****************footer*****************/
+
+footer.main{
+text-align: center;
+padding: 15px;
+
+
+}
+footer.main img {
+	width: 25px;
+}
+
+footer main a{
+	display: inline-block;
+	padding: 5px 10px;
+}
+
+footer.main p {
+	font-size: 1.2rem;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+
+}
+
+/**************** gallery *****************/
+
+#gallery .item{
+	width: 33.3333%;
+}
+
+#gallery .item:nth-child(3n + 1) {
+	clear: left;
+}
+
+
+@media only screen and (min-width: 992px) {
+	nav li a{ 
+	transition: background .3s;
+	}
+
+	nav li a:hover {
+	background: #0ACE99;
+	border-radius: 3px;
+  }
+   #gallery .item{
+    transition: opacity .3s;
+  } 
+  #gallery .item:hover{
+  	opacity: .7;
+  } 
+
+}
+
+	
+
+
+
+
+
+ 
+ 
+@media only screen and (max-width:  767px) {
+
+/**************** gallery *****************/
+
+	#gallery .item:nth-child(2n + 1) {
+	 clear: left;
+  }
+
+}
