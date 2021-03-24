@@ -125,8 +125,8 @@ margin:0;
 
 /**************** contacts *****************/
 
-#contac ul {
-	list-style-type: none;
+#contact ul {
+	list-style-type:none;
 	padding: 0;
 }
 #contact li{
@@ -191,14 +191,19 @@ footer.footer p {
 }
 /**************** contacts *****************/
 
-#contacts .info{
-   float: left;
-   width: 50%;
+#contact .info,#contacts .contacts{
+	width: 50%;
+   padding: 15px;
 }
 
-#contacts .contacts{
+#contact .info{
+   float: left;
+  
+}
+
+#contact .contacts{
  float: right;
- width: 50%;
+
 }
 
 	
