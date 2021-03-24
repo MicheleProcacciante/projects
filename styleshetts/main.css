@@ -18,7 +18,8 @@ font-size: 20px;
 
 a{
 	text-decoration: none;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
+	color: #000;
 }
 
 header{
@@ -32,7 +33,7 @@ header{
 	padding:0 15px;
 }
 
-.clerfix: :after{
+.clearfix::after{
 content: "";
 clear: both;
 display: table;
@@ -40,6 +41,12 @@ display: table;
 .active{
 	background: #0ACE99;
 	border-radius: 3px;
+}
+img{
+	width: 100%;
+}
+.title{
+	font-size: 2.2rem;
 }
 
 /*******************header********************/
@@ -82,6 +89,7 @@ nav li a{
 #gallery {
 	padding-top: 15px;
 	padding-bottom: 15px;
+
 }
 
 #gallery img{
@@ -108,12 +116,29 @@ margin:0;
 #gallery .picture{
 	line-height: 0;
 }
+/**************about********************/
+
+#about img {
+	border-radius: 100%;
+	padding: 15px 0;
+}
+
+/**************** contacts *****************/
+
+#contac ul {
+	list-style-type: none;
+	padding: 0;
+}
+#contact li{
+	padding: 10px 0;
+}
 
 /****************footer*****************/
 
 footer.footer{
 text-align: center;
 padding: 15px;
+
 
 
 }
@@ -146,6 +171,40 @@ footer.footer p {
 #gallery .item:nth-child(3n + 1) {
 	clear: left;
 }
+/**************** about *****************/
+
+
+#about img{
+	width: 70%;
+}
+
+#about .profile-pic{
+	float: left;
+	width: 50%;
+	padding: 15px;
+	text-align: center;
+}
+#about .description{
+	float: right;
+	width: 50%;
+	padding: 30px 15px 15px ;
+}
+/**************** contacts *****************/
+
+#contacts .info{
+   float: left;
+   width: 50%;
+}
+
+#contacts .contacts{
+ float: right;
+ width: 50%;
+}
+
+	
+
+
+
 
 
 @media only screen and (min-width: 992px) {
