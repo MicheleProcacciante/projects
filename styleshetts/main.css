@@ -2,9 +2,16 @@
 
 *{
 	box-sizing: border-box;
+
+
 }
+
+
+
+
 html{
 	font-size: 62.5%;
+	background: white;
 }
 
 body{
@@ -25,6 +32,7 @@ a{
 header{
 	background: #0ACE99;
 	text-align: center;
+
 }
 
 .container{
@@ -49,6 +57,10 @@ img{
 	font-size: 2.2rem;
 }
 
+main{
+	min-height: calc(100vh - 138.5px - 104px);
+}
+
 /*******************header********************/
 
 header .logo-container{
@@ -56,7 +68,7 @@ header .logo-container{
 }
 
 header img{
-	width: 150px
+	width: 120px
 }
 
 /******************* Nvigation********************/
@@ -131,6 +143,13 @@ margin:0;
 }
 #contact li{
 	padding: 10px 0;
+}
+#contact .material-icons{
+	float: left;
+}
+#contact .contact a{
+	margin: 3px 0 0 5px;
+	display: inline-block;
 }
 
 /****************footer*****************/
