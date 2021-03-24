@@ -59,9 +59,19 @@ img{
 
 main{
 	min-height: calc(100vh - 138.5px - 104px);
+	padding-top: 138.5px;
 }
 
 /*******************header********************/
+
+header{
+	background: #0ACE99;
+	text-align: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+}
 
 header .logo-container{
 	padding: 20px;
@@ -112,6 +122,7 @@ nav li a{
 	float: left;
 	width: 50%;
 	padding: 15px;
+	position: relative;
 }
 
 
@@ -128,6 +139,14 @@ margin:0;
 #gallery .picture{
 	line-height: 0;
 }
+
+#gallery .caption img{
+	width: 30px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
 /**************about********************/
 
 #about img {
