@@ -19,14 +19,26 @@ body{
 	font-size: 1.6rem;
 }
 
-li{
-font-size: 20px;
-}
 
 a{
 	text-decoration: none;
 	font-size: 1.4rem;
 	color: #000;
+}
+
+.btn{
+display: inline-block;
+background: #F5A623;
+padding: 12px 24px;
+color: #fff;
+text-transform: uppercase;
+border: 0;
+transition: background .3%;
+
+}
+
+.btn:hover{
+	background: #f58e23;
 }
 
 header{
@@ -65,7 +77,7 @@ main{
 /*******************header********************/
 
 header{
-	background: #0ACE99;
+	background: black;
 	text-align: center;
 	position: fixed;
 	top: 0;
@@ -74,11 +86,11 @@ header{
 }
 
 header .logo-container{
-	padding: 20px;
+	padding: 10px;
 }
 
 header img{
-	width: 120px
+	width: 80px
 }
 
 /******************* Nvigation********************/
@@ -105,13 +117,32 @@ nav li a{
 	text-transform: uppercase;
 	text-decoration: none;
 }
+/*******************hero banner********************/
+#hero{
+background-image: url(../images/torta.jpg);
+color: #fff;
+padding-top: 40px;
+background-size: cover;
+background-size: center;
+}
+
+#hero .hero-caption{
+	text-align: center;
+	padding: 140px 20px; 
+}
+
 
 /*******************galery********************/
 
 #gallery {
-	padding-top: 15px;
-	padding-bottom: 15px;
+	
+	padding-top: 35px;
+	padding-bottom: 35px;
 
+}
+.gallery{
+	display: flex;
+	flex-wrap: wrap;
 }
 
 #gallery img{
@@ -119,8 +150,7 @@ nav li a{
 }
 
 #gallery .item{
-	float: left;
-	width: 50%;
+	flex: 0 1 50%;
 	padding: 15px;
 	position: relative;
 }
@@ -132,7 +162,7 @@ nav li a{
 	padding: 10px;
 }
 
-#gallery .caprion p {
+#gallery .caption p {
 margin:0;
 }
 
@@ -149,12 +179,22 @@ margin:0;
 
 /**************about********************/
 
+ #about{
+ 	padding: 40px 0;
+ 	background: orange;
+ }
+
 #about img {
 	border-radius: 100%;
 	padding: 15px 0;
 }
 
 /**************** contacts *****************/
+
+#contact{
+	padding: 40px 0;
+	background: #ff9933;
+}
 
 #contact ul {
 	list-style-type:none;
@@ -197,50 +237,47 @@ footer.footer p {
 
 
 @media only screen and (min-width: 768px) {
+ /**************** gallery *****************/
 
-}
+ #gallery .item{
+ 	flex: 0 1 33.3333%;
+ }
 
-/**************** gallery *****************/
-
-#gallery .item{
-	width: 33.3333%;
-}
-
-#gallery .item:nth-child(3n + 1) {
-	clear: left;
-}
-/**************** about *****************/
+ 
 
 
-#about img{
-	width: 70%;
-}
+ /**************** about *****************/
 
-#about .profile-pic{
-	float: left;
-	width: 50%;
-	padding: 15px;
-	text-align: center;
-}
-#about .description{
-	float: right;
-	width: 50%;
-	padding: 30px 15px 15px ;
-}
-/**************** contacts *****************/
 
-#contact .info,#contacts .contacts{
-	width: 50%;
-   padding: 15px;
-}
+	#about img{
+		width: 70%;
+	}
 
-#contact .info{
-   float: left;
-  
-}
+	#about .profile-pic{
+		float: left;
+		width: 50%;
+		padding: 15px;
+		text-align: center;
+	}
+	#about .description{
+		float: right;
+		width: 50%;
+		padding: 30px 15px 15px ;
+	}
+	/**************** contacts *****************/
 
-#contact .contacts{
- float: right;
+	#contact .info,#contacts .contacts{
+		width: 50%;
+	   padding: 15px;
+	}
+
+	#contact .info{
+	   float: left;
+	  
+	}
+
+	#contact .contacts{
+	 float: right;
 
 }
 
@@ -251,12 +288,29 @@ footer.footer p {
 
 
 @media only screen and (min-width: 992px) {
+
+    header{
+    	display: flex;
+    	justify-content: space-between;
+    	align-items: center;
+    }
+
+    header .logo-container{
+    	
+    } 
+
+	nav{
+
+     background: black;
+     
+	}
+
 	nav li a{ 
 	transition: background .3s;
 	}
 
-	nav li a:hover {
-	background: #0ACE99;
+	nav li a:hover, nav li a.active {
+	background: #ff6600;
 	border-radius: 3px;
   }
    #gallery .item{
