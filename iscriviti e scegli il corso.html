@@ -39,52 +39,51 @@
       </div>
     </div> 
    </header >
-   <main id="main-content">
-   	<section id="hero">
-     <div class="container">
-     <div class="hero-caption"> 
-      <h1>Welcome to our studio!</h1>
-       <h2>Check out our works</h2> 
-       <a href="#gallery" class="btn">Have a look</a>
-        </div>
-         </div> 
-       </section>
-   		  
-         <section id="about" class="clearfix">
-            <div class="container"></div>
-            <div class="profile-pic">
-               <img src="images/torta2.jpg" alt="torta">
-            </div>
-            <div class="description">
-               <h1 class="title">about</h1>
-               <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-               <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-            </div>
-         </section>
-          <section id="contact" class="clearfix">
-          <div class="info">
-            <h1 class="title">info</h1>
-               <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-               <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-          </div>
-          <div class="contacts">
-            <div class="container"></div>
-            <h1 class="title">contatti</h1>
-            <ul>
-              <li>
-                <span class="material-icons">smartphone</span><a href="tel:+393927703252">+393927703252</a>
-              </li>
+  
+       </section class="lol">
+   		  <h1>iscriviti a D.M</h1>
+        <label for="name">nome:</label>
+        <input type="text" id="name" name="user_name"> 
+        <label for="mail">mail:</label>
+        <input type="email" id="mail"  name="user_mail">
+        <label for="password">password:</label>
+        <input type="password" id="password" name="user_password">
+        <label for="biografia">biografia:</label>
+        <textarea id="biografia" name="user_biofrafia"></textarea>
 
-              <li>
-                <span class="material-icons">email</span><a href="mailto:michele.procacciante@gmail.com">michele.procacciante@gmail.com</a>
-              </li>
+        <label for="corsi">scegli:</label>
+        <select id="corsi" name="user_corsi">
 
-              <li>
-                <span class="material-icons">facebook</span><a href="https://www.facebook.com/michele.procacciante/">michele procacciante</a>
-            </li>
-            </ul>
-          </div>
-        </section>
+          <optgroup label="torte e confetture">
+          <option value="torta al cioccolato">torta al cioccolato</option>
+          <option value="pan_di_spagna">pan di spagana</option>
+          <option value="panna">panna</option>
+          <option value="crema_pasticcera">crema pasrticcera</option>
+          <option value="crema_al_mascarpone">crema al mascarpone</option>
+          </optgroup>
+          <optgroup label="pasticcini">
+          <option value="cannoli_siciliani">cannoli siciliani</option>
+          <option value="bignè">bignè</option>
+          <option value="cannoli_alla_crema">cannoli alla crema </option>
+          <option value="babà">babà</option>
+          </optgroup>
+        </select>
+
+        <label>vuoi ricevere la tua newsletter?</label>
+        <input type="radio" id="si_news" value="si_news" name="newsletter"><label for="si_news" class="news">si</label><br>
+        
+        <input type="radio" id="no_news" value="no_news" name="newsletter"><label for="no_news" class="news">no</label>
+
+
+        <label>interessi:</label>
+        <input type="checkbox" id="torte e confetture" name="torte e confetture"><label for="torte e confetture" class="news">torte e confetture</label><br>
+        <input type="checkbox" id="pasticcini" name="pasticcini"><label for="pasticcini" class="news">pasticcini</label><br>
+        
+
+        <button type="submit" >iscriviti</button>
+
+      </form>
+         
    </main>
    <footer class="footer">
    	<div class="social">
